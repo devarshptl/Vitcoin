@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">VitCoin</string>
+    <string name="feed_desc">$9K Bitcoin Price Beats Stocks as Volatility and Fiat Fall Flat</string>
+    <string name="buzz_desc">Buzz in VIT !</string>
+    <string name="social_desc">Rajasthan government declares 1,388 villages drought affected</string>
+    <string name="email">#dbpatel0205</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

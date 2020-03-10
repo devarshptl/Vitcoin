@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_qrscanner"
+            android:icon="@drawable/home"
+            android:title="QR Scanner" />
+        <item
+            android:id="@+id/nav_messages"
+            android:icon="@drawable/feeds"
+            android:title="Feeds" />
+        <item
+            android:id="@+id/nav_friends"
+            android:icon="@drawable/contact"
+            android:title="Contact Us" />
+        <item
+            android:id="@+id/nav_discussion"
+            android:icon="@drawable/about"
+            android:title="About Us" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/logout"
+            android:title="Logout" />
+    </group>
+</menu>

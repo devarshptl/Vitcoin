@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:fitsSystemWindows="true">
+<LinearLayout
+android:id="@+id/main_head"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:background="@drawable/circular_left_edge"
+android:gravity="center"
+android:elevation="100dp">
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="20dp"
+    android:layout_marginBottom="20dp"
+    android:layout_marginRight="70dp"
+    android:gravity="center">
+    <ImageView
+        android:id="@+id/profile_image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/logo"
+        android:background="@drawable/round_edge"/>
+
+    <TextView
+        android:id="@+id/profile_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You"
+        android:layout_gravity="center"/>
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="20dp"
+    android:layout_marginBottom="20dp"
+    android:layout_marginRight="70dp"
+    android:gravity="center">
+    <ImageView
+        android:id="@+id/trending_image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/trend"
+        android:background="@drawable/round_edge"/>
+
+    <TextView
+        android:id="@+id/trending_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Trending"
+        android:layout_gravity="center"/>
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="20dp"
+    android:layout_marginBottom="20dp"
+    android:gravity="center">
+    <ImageView
+        android:id="@+id/payment_image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/payment"
+        android:background="@drawable/round_edge"
+        />
+
+    <TextView
+        android:id="@+id/payment_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Payments"
+        android:layout_gravity="center"/>
+</LinearLayout>
+</LinearLayout>
+
+<ScrollView
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:layout_marginTop="50dp">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@drawable/curve_leftedge_1"
+        android:paddingTop="70dp"
+        android:paddingBottom="20dp"
+        android:elevation="99dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:id="@+id/status_number"
+            android:orientation="vertical"
+            android:paddingTop="10dp"
+            android:layout_marginRight="80dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vitcoins"
+                android:textColor="#fff"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="339,000"
+                android:textColor="#fff"
+                android:textSize="22sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:id="@+id/bit_coin"
+            android:orientation="vertical"
+            android:paddingTop="10dp"
+            android:paddingLeft="40dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Value"
+                android:textColor="#fff"
+                />
+            <TextView
+                android:id="@+id/vitcoin_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="119"
+                android:textColor="#fff"
+                android:textSize="22sp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@drawable/curve_leftedge_2"
+        android:paddingTop="70dp"
+        android:paddingBottom="20dp"
+        android:layout_marginTop="-60dp"
+        android:elevation="98dp">
+
+        <com.jjoe64.graphview.GraphView
+            android:id="@+id/graph_view"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_marginTop="10dp"
+            android:background="#113f67"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/main_feed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@drawable/curve_leftedge_1"
+        android:paddingTop="70dp"
+        android:paddingBottom="20dp"
+        android:layout_marginTop="-60dp"
+        android:elevation="97dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="50dp">
+
+            <TextView
+                android:id="@+id/feed_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cointelegraph"
+                android:textColor="#c7c7c7"
+                android:textSize="18dp"/>
+
+            <TextView
+                android:id="@+id/feed_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/feed_desc"
+                android:textColor="#fff"
+                android:textSize="22dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/main_buzz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@drawable/curve_leftedge_2"
+        android:paddingTop="73dp"
+        android:paddingBottom="20dp"
+        android:layout_marginTop="-60dp"
+        android:elevation="96dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="50dp">
+
+            <TextView
+                android:id="@+id/buzz_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vellore"
+                android:textColor="#c7c7c7"
+                android:textSize="18dp"/>
+
+            <TextView
+                android:id="@+id/buzz_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/buzz_desc"
+                android:textColor="#fff"
+                android:textSize="22dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/main_social"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@drawable/curve_leftedge_1"
+        android:paddingTop="73dp"
+        android:paddingBottom="20dp"
+        android:layout_marginTop="-60dp"
+        android:elevation="95dp"
+        android:layout_marginBottom="50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="50dp">
+
+            <TextView
+                android:id="@+id/social_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Social News"
+                android:textColor="#c7c7c7"
+                android:textSize="18dp"/>
+
+            <TextView
+                android:id="@+id/social_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/social_desc"
+                android:textColor="#fff"
+                android:textSize="22dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+
+</ScrollView>
+
+</RelativeLayout>
